@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/login.css">
+    <link rel="stylesheet" href="mediaQuerys.css">
+    <title>Iniciar sesión</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Formulario de inicio de sesión -->
+        <div class="container-formulario" id="inicio-sesion">
+            <form class="formulario" id="formulario-uno">
+                <div class="usuario">
+                    <img src="/imagenes/usuario-removebg-preview.png" alt="usuario">
+                </div>
+                <h1>Iniciar Sesión</h1>
+                <div class="iconos-redes">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="botones">
+                    <button type="submit" class="btn" id="btn-inicio">Iniciar Sesión</button>
+                    <button type="button" class="btn" id="registrar">Registrarse</button>
+                </div>
+                <a href="#" class="recuperar">¿Olvidaste tu contraseña?</a>
+            </form>
+        </div>
+
+        <!-- Formulario de registro -->
+        <div id="unete" class="container-formulario-dos">
+            <form method="post" class="formulario-unete" id="formulario-registrar">
+                <h1>Únete</h1>
+                <div class="iconos-redes">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input id="nombre" type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <input id="email" type="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input id="contraseña" type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="user">
+                    <span><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" placeholder="Confirmar Contraseña" required>
+                </div>
+                <div class="botones">
+                    <button type="submit" class="btn" id="btn-registrar">Registrarse</button>
+                    <button type="button" class="btn" id="btn-inicio">Iniciar Sesión</button>
+                </div>
+                <a href="#" class="recuperar">¿Ya tienes una cuenta?</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

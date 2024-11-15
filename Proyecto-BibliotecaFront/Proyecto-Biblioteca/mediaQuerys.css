@@ -1,0 +1,204 @@
+@media (max-width:2560px) {
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 50%;
+        height: 100%;
+        padding: 15px;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 20px;
+        padding: 5px 10px;
+    
+    }
+}
+@media (max-width:1440px){
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 60%;
+        height: 100%;
+        padding: 15px;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 20px;
+        padding: 5px 10px;
+    
+    }
+}
+
+/* Media Query del menú hamburguesa */
+@media (max-width: 1200px) {
+    .navbar .container-enlaces{
+        grid-column: 3/10;
+    }
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 80%;
+        height: 100%;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 0px;
+        padding: 5px 10px;
+    
+    }
+}
+@media (max-width: 1038px) {
+    .navbar .container-enlaces{
+        grid-column: 2/10;
+    }
+    .container-libros{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 60%;
+        height: 70%;
+        margin: 0px auto;
+        text-align: center;
+        box-shadow: 1px 3px 10px rgba(0,0,0,0.5);
+    }
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 80%;
+        height: 100%;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 0px;
+        padding: 5px 10px;
+    
+    }
+}
+@media (max-width:992px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .container-enlaces{
+        position: absolute;
+        width: 40%;
+        height: 50vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+       top: 70px;
+       right: -20px;
+       display: none;
+    }
+    #menu-bar{
+        grid-column: 9/10;
+    }
+    .navbar .menu-hamburguer{
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .navbar .menu-toggle{
+        display: grid;
+    }
+
+    .container-libros{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        background-color: #fff;
+        border-radius: 20px;
+        width: 90%;
+        height: 70%;
+        margin: 0px auto;
+        text-align: center;
+        box-shadow: 1px 3px 10px rgba(0,0,0,0.5);
+    }
+    .container-libros input{
+        width: 50%;
+    }
+    .container-libros .nombre{
+        display: block;
+        height: 50px;
+        text-align: initial;
+    }
+    
+    .nombre input{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container-prestamos .prestamos{
+        display: block;
+        height: 90%;
+        width: 50%;
+        height: 100%;
+    }
+    .prestamo-form .selec{
+        display: flex;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+    .container-entrega{
+        display: block;
+        height: 100%;
+        width: 40%;
+    }
+    .entrega{
+        display: block;
+        text-align: initial;
+    }
+    .container-entrega button{
+        margin: 30px 0px;
+      
+    }
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 80%;
+        height: 100%;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 0px;
+        padding: 5px 10px;
+    
+    }
+   
+
+}
+@media (max-width: 768px) {
+    .container-prestamos .prestamos{
+        display: block;
+        height: 90%;
+        width: 50%;
+        height: 100%;
+    }
+    .prestamo-form .selec{
+        display: flex;
+        gap: 10px;
+        margin: 10px 0px;
+        font-size: 12px;
+    }
+    .container-entrega{
+        display: block;
+        height: 100%;
+        width: 40%;
+    }
+    .entrega{
+        display: block;
+        text-align: initial;
+    }
+    .container-entrega button{
+        margin: 30px 0px;
+    }
+    .container-devoluciones .devoluciones{
+        margin: 0px auto;
+        width: 80%;
+        height: 100%;
+    }
+    .devoluciones input{
+        width: 90%;
+        margin: 10px 0px;
+        padding: 5px 10px;
+    
+    }
+
+}

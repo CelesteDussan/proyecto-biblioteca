@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mediaQuerys.css">
+    <title>El Cielo De Los Libros</title>
+</head>
+
+<body>
+    <div class="estructura">
+        <header>
+            <nav class="navbar">
+                <h1 class="titulo-navbar">
+                    <a href="">EL Cielo</a>
+                </h1>
+                <div class="container-enlaces" id="menu">
+                    <a href="#" class="enlaces">Inicio</a>
+                    <a href="#infraestructura" class="enlaces">Infraestructura Biblioteca</a>
+                    <a href="#registro" class="enlaces">Registros de Libros</a>
+                    <a href="#prestamo" class="enlaces">Prestamos de Libros</a>
+                    <a href="#devoluciones" class="enlaces">Devoluciones</a>
+                </div>
+                <div id="menu-bar">
+                    <a href="#" class="menu-hamburguer">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="container-main">
+                <main class="main">
+                    <div class="imagen">
+                        <h1>el cielo de los libros</h1>
+                        <figure class="figure">
+                            <img src="/imagenes/fondo-inicio-removebg-preview.png" alt="img inicio">
+                        </figure>
+                        <p>"Al igual que las nuebes tranforman el cielo, los libros transforman la mente"</p>
+                        <button><a href="/login.html">Sing in</a></button>
+                    </div>
+                </main>
+
+                <div class="redes-sociales">
+                    <h2>Redes Sociales</h2>
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="infraestructura" class="infraestructura">
+                <div class="title">
+                    <h1>Infraestructura Bibliotecaria</h1>
+                </div>
+                <div class="selecciones">
+                    <div class="seleccion-uno select">
+                        <img src="/imagenes/anadir.png" alt="Registros">
+                        <a href="#registro">Registros de Libros</a>
+                    </div>
+                    <div class="seleccion-dos select">
+                        <img src="/imagenes/libro.png" alt="prestamos">
+                        <a href="#prestamo">Prestamos</a>
+                    </div>
+                    <div class="seleccion-tres select">
+                        <img src="/imagenes/calendario.png" alt="devoluciones">
+                        <a href="#devoluciones">Devoluciones</a>
+                    </div>
+                    <div class="seleccion-cuatro select">
+                        <img src="/imagenes/pila-de-libros-de-tres.png" alt="libros">
+                        <a href="#libros">Libros</a>
+                    </div>
+                </div>
+                <button class="historial" type="submit">
+                    Historial
+                </button>
+            </section>
+
+            <section id="registro" class="registros-libros">
+                <div class="linea"></div>
+                <h1>Registros de Libros</h1>
+                <div class="container-libros">
+                    <form class="libros">
+                        <div class="entradas nombre">
+                            <label>Nombre del libro</label>
+                            <input type="text" placeholder="Nombre...">
+                        </div>
+                        <div class="entradas">
+                            <label>Autor</label>
+                            <input type="text" placeholder="autor..">
+                        </div>
+                        <div class="entradas">
+                            <label>Categoria</label>
+                            <input type="text" placeholder="categoria..">
+                        </div>
+                        <div class="entradas">
+                            <label>Cantidad de copia</label>
+                            <input type="number" placeholder="ingrese...">
+                        </div>
+                        <div class="entradas">
+                            <label>Estado del libro</label>
+                            <input type="text" placeholder="Estado..">
+                        </div>
+                        <button type="submit">
+                            Registrar
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="prestamo" class="Prestamista">
+                <div class="linea"></div>
+                <h1 class="title-prestamo">Préstamos de libros</h1>
+                <div class="container-prestamos">
+                    <div class="prestamos">
+                        <form class="prestamo-form">
+                            <div class="entradas">
+                                <h3>Nombre completo</h3>
+                                <input type="text" placeholder="nombre..">
+                            </div>
+                            <div class="entradas selec">
+                                <h3>Tipo de documento</h3>
+                                <select name="documento" id="documento">
+                                    <option value="">Tarjeta Identidad</option>
+                                    <option value="">C.Ciudadanía</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="numero de documento..">
+                            <div class="entradas">
+                                <h1>Telefono</h1>
+                                <input type="tel" placeholder="ingrese su número">
+                            </div>
+                            <div class="entradas">
+                                <h3>Correo electronico</h3>
+                                <input type="email" placeholder="ingrese su email...">
+                            </div>
+                        </form>
+                        <button id="btn-r-prestamo" type="submit">
+                            Registrar
+                        </button>
+                    </div>
+                    <div class="container-entrega">
+                        <form class="entrega">
+                            <div class="entradas">
+                                <h3>Nombre Usuario</h3>
+                                <input type="text" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="entradas">
+                                <h3>Libro</h3>
+                                <input type="text">
+                            </div>
+                            <div class="entradas">
+                                <h3>Día de entrega</h3>
+                                <input type="date">
+                            </div>
+                            <div class="entradas">
+                                <h3>Encargad@</h3>
+                                <input type="text">
+                            </div>
+                        </form>
+                        <button type="submit">
+                            Registrar
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="devoluciones" class="regresos">
+                <h1>Devoluciones</h1>
+                <div class="contenedor">
+                    <div class="container-devoluciones">
+                        <form class="devoluciones">
+                            <div class="entradas">
+                                <h3>Nombre Usuario</h3>
+                                <input type="text" placeholder="ingrese nombre..">
+                            </div>
+                            <div class="entradas one">
+                                <h3>Libro</h3>
+                                <select name="libros" id="select" class="select">
+                                    <option value="">selecciona..</option>
+                                </select>
+                            </div>
+                            <div class="entradas">
+                                <h3>Día entregado</h3>
+                                <input type="date">
+                            </div>
+                            <div class="entradas">
+                                <h3>Encargad@</h3>
+                                <input type="text" placeholder="encargado...">
+                            </div>
+                            <div class="entradas">
+                                <h3>Estado del libro</h3>
+                                <input type="text">
+                            </div>
+                            <button type="submit">
+                                Registrar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
